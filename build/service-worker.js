@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/autumn31/geo-game/build/precache-manifest.bf4c1c5a8d8879ae2b519df69680a434.js"
+  "/geo-game/build/precache-manifest.5051ace56e105f60b3aac6e36fc584b0.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/autumn31/geo-game/build/index.html", {
+workbox.routing.registerNavigationRoute("/geo-game/build/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
