@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/geo-game/build/precache-manifest.eaf9ed859ef8d0d28d310d91dbec368b.js"
+  "/geo-game/build/precache-manifest.cbb8bd6b41f65348dfdb0399eb004e3e.js"
 );
 
 workbox.clientsClaim();

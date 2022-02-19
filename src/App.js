@@ -6,7 +6,7 @@ import "./App.css";
 import { confirmAlert } from "react-confirm-alert";
 import "react-confirm-alert/src/react-confirm-alert.css";
 
-const acceptRange = 12;
+const acceptRange = 50;
 const byPassSecret = "autumn31 is smart";
 
 function distance(lat1, lon1, lat2, lon2) {
@@ -66,6 +66,7 @@ class App extends Component {
     if (userAnswer === byPassSecret) {
       return true;
     }
+    location && console.log(distance(pos[0], pos[1], location[0], location[1]));
     if (
       location &&
       distance(pos[0], pos[1], location[0], location[1]) > acceptRange
