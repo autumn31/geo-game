@@ -1,7 +1,7 @@
 {
   "main.css": "/geo-game/build/static/css/main.9c8f2ef5.chunk.css",
-  "main.js": "/geo-game/build/static/js/main.4571d1f2.chunk.js",
-  "main.js.map": "/geo-game/build/static/js/main.4571d1f2.chunk.js.map",
+  "main.js": "/geo-game/build/static/js/main.01954e05.chunk.js",
+  "main.js.map": "/geo-game/build/static/js/main.01954e05.chunk.js.map",
   "static/css/1.fabce9a8.chunk.css": "/geo-game/build/static/css/1.fabce9a8.chunk.css",
   "static/js/1.92ca2c85.chunk.js": "/geo-game/build/static/js/1.92ca2c85.chunk.js",
   "static/js/1.92ca2c85.chunk.js.map": "/geo-game/build/static/js/1.92ca2c85.chunk.js.map",
@@ -11,6 +11,6 @@
   "static/css/main.9c8f2ef5.chunk.css.map": "/geo-game/build/static/css/main.9c8f2ef5.chunk.css.map",
   "static/css/1.fabce9a8.chunk.css.map": "/geo-game/build/static/css/1.fabce9a8.chunk.css.map",
   "index.html": "/geo-game/build/index.html",
-  "precache-manifest.cbb8bd6b41f65348dfdb0399eb004e3e.js": "/geo-game/build/precache-manifest.cbb8bd6b41f65348dfdb0399eb004e3e.js",
+  "precache-manifest.f1d1e07eb2ef3b1d260e68144e68082e.js": "/geo-game/build/precache-manifest.f1d1e07eb2ef3b1d260e68144e68082e.js",
   "service-worker.js": "/geo-game/build/service-worker.js"
 }
