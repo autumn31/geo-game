@@ -40,7 +40,6 @@ class App extends Component {
       result: "",
     };
 
-    this.handleSubmit = this.handleSubmit.bind(this);
     this.ontextChange = this.ontextChange.bind(this);
   }
 
@@ -51,12 +50,13 @@ class App extends Component {
     });
   }
 
-  handleSubmit(event) {
-    navigator.geolocation.getCurrentPosition(this.success.bind(this), function(
-      error
-    ) {
-      console.error("Error Code = " + error.code + " - " + error.message);
-    });
+  handleSubmit(id, event) {
+    navigator.geolocation.getCurrentPosition(
+      this.success.bind(this, id),
+      function(error) {
+        console.error("Error Code = " + error.code + " - " + error.message);
+      }
+    );
   }
 
   check(pos, userAnswer) {
@@ -78,11 +78,11 @@ class App extends Component {
     return true;
   }
 
-  success(position) {
+  success(qid, position) {
     const { latitude, longitude } = position.coords;
     if (this.check([latitude, longitude], this.state.userAnswer)) {
-      if (this.state.questionId < quizQuestions.length) {
-        setTimeout(() => this.setNextQuestion(), 300);
+      if (qid < quizQuestions.length) {
+        setTimeout(() => this.setNextQuestion(qid), 300);
       }
     } else {
       confirmAlert({
@@ -96,9 +96,9 @@ class App extends Component {
     }
   }
 
-  setNextQuestion() {
-    const counter = this.state.counter + 1;
-    const questionId = this.state.questionId + 1;
+  setNextQuestion(curId) {
+    const questionId = curId + 1;
+    const counter = curId;
 
     this.setState({
       counter: counter,
@@ -139,7 +139,7 @@ class App extends Component {
         questionId={this.state.questionId}
         question={this.state.question}
         questionTotal={quizQuestions.length}
-        handleSubmit={this.handleSubmit}
+        handleSubmit={this.handleSubmit.bind(this, this.state.questionId)}
         ontextChange={this.ontextChange}
       />
     );
