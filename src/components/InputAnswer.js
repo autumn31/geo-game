@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import "./style.css";
 
 function InputAnswer(props) {
-  console.log(props.answer);
   return !props.answer ? (
     <div />
   ) : (

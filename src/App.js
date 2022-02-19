@@ -30,10 +30,11 @@ function toRad(Value) {
 class App extends Component {
   constructor(props) {
     super(props);
-
+    var qId = localStorage.getItem("questionId");
+    qId = qId ? parseInt(qId) : 1;
     this.state = {
-      counter: 0,
-      questionId: 1,
+      counter: qId - 1,
+      questionId: qId,
       question: "",
       userAnswer: "",
       answersCount: {},
@@ -99,6 +100,7 @@ class App extends Component {
   setNextQuestion(curId) {
     const questionId = curId + 1;
     const counter = curId;
+    localStorage.setItem("questionId", questionId);
 
     this.setState({
       counter: counter,
