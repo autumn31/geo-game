@@ -46,15 +46,15 @@ class App extends Component {
 
   componentDidMount() {
     this.setState({
-      question: quizQuestions[0].question,
-      answer: quizQuestions[0].answer,
+      question: quizQuestions[this.state.counter].question,
+      answer: quizQuestions[this.state.counter].answer,
     });
   }
 
   handleSubmit(id, event) {
     navigator.geolocation.getCurrentPosition(
       this.success.bind(this, id),
-      function(error) {
+      function (error) {
         console.error("Error Code = " + error.code + " - " + error.message);
       }
     );
