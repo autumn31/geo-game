@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "3328150acc92f72b0b69",
+    "revision": "0e8886063bde940798b7",
     "url": "/geo-game/build/static/css/main.3b82f000.chunk.css"
   },
   {
-    "revision": "3328150acc92f72b0b69",
-    "url": "/geo-game/build/static/js/main.3328150a.chunk.js"
+    "revision": "0e8886063bde940798b7",
+    "url": "/geo-game/build/static/js/main.0e888606.chunk.js"
   },
   {
     "revision": "515e88ae5d747cdd9975",
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/geo-game/build/static/media/icon-check.4cffa739.svg"
   },
   {
-    "revision": "f510da4adfcc570952b97b9178c96f41",
+    "revision": "fbd5c81ddaca0321fb33645032e6b6c4",
     "url": "/geo-game/build/index.html"
   }
 ];
